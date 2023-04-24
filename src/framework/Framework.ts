@@ -24,22 +24,14 @@ export class FuckingFramework {
   }
 
   private renderComponent(element: FuckingComponent, i = 0) {
-    console.log(`${" ".repeat(i)}rendering component`, element);
+    const el = element();
 
-    const r = element();
-
-    for (const child of r) {
+    for (const child of el) {
       if (child instanceof Node) {
-        console.log(`${" ".repeat(i + 1)}appending element`, child);
-
         this.el.appendChild(child);
       } else {
-        console.log(`${" ".repeat(i + 1)}sub-rendering component`, child);
-
         this.renderComponent(child, i + 1);
       }
     }
-
-    console.log(`${" ".repeat(i + 1)}rendered component`, element);
   }
 }
