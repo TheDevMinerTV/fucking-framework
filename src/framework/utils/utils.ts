@@ -1,3 +1,5 @@
+import { Signal } from "./signal";
+
 export const $el = (
   type: string,
   attrs: Record<string, string> = {},
@@ -19,6 +21,6 @@ export const $el = (
   return el;
 };
 
-export const $text = (text: string): Node => {
-  return document.createTextNode(text);
+export const $text = (text: string | Signal<string> | Signal<number>): Element => {
+  return $el("span", {}, {}, [document.createTextNode(typeof text === "string" ? text : text.get().toString())]);
 };
