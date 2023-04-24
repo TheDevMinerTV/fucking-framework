@@ -10,6 +10,12 @@ export type Signal<T> = {
   set: SetSignalValue<T>;
 };
 
+export type StringableSignal =
+  | Signal<boolean>
+  | Signal<bigint>
+  | Signal<string>
+  | Signal<number>;
+
 export const newSignal = <T>(key: string, initial: T) => {
   if (signals.has(key)) {
     return signals.get(key) as Signal<T>;

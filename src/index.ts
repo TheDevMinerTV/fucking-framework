@@ -1,7 +1,7 @@
 import { init } from "./framework";
 import { FuckingComponent } from "./framework/Component";
 import { newSignal } from "./framework/utils/signal";
-import { $el, $text } from "./framework/utils/utils";
+import { $e, $el, $t, $text } from "./framework/utils/utils";
 
 const main = () => {
   const el = document.querySelector("#app");
@@ -10,7 +10,7 @@ const main = () => {
   }
 
   const HomeComponent: FuckingComponent = () => {
-    return [$el("h1", {}, {}, [$text("Hey!")]), CounterComponent];
+    return [$e`h1 ${$text("Hey!")}`, CounterComponent];
   };
 
   const CounterComponent: FuckingComponent = () => {
@@ -23,16 +23,16 @@ const main = () => {
     };
 
     return [
-      $el("button", {}, { click: onClick }, [$text("+1")]),
-      $el("br"),
-      $el("span", {}, {}, [$text("Count:"), $text(i)]),
+      $el("button", {}, { click: onClick }, [$t`+1`]),
+      $e`br`,
+      $e`span ${$t`Count: ${i}`}`,
       $el(
         "div",
         {},
         {},
         new Array(i.get())
           .fill(0)
-          .map((_, i) => $el("div", {}, {}, [$text(i.toString()), $el("br", {}, {}, [])]))
+          .map((_, i) => $e`div ${$text(i.toString())} ${$e`br`}`)
       ),
     ];
   };

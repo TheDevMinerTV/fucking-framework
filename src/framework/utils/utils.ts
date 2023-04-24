@@ -1,4 +1,4 @@
-import { Signal } from "./signal";
+import { StringableSignal } from "./signal";
 
 export const $el = (
   type: string,
@@ -21,6 +21,26 @@ export const $el = (
   return el;
 };
 
-export const $text = (text: string | Signal<string> | Signal<number>): Element => {
-  return $el("span", {}, {}, [document.createTextNode(typeof text === "string" ? text : text.get().toString())]);
+export const $e = (type: TemplateStringsArray, ...children: Node[]) => {
+  return $el(type[0], {}, {}, children);
+};
+
+export const $text = (text: string | StringableSignal): Node => {
+  return document.createTextNode(
+    typeof text === "string" ? text : text.get().toString()
+  );
+};
+
+export const $t = (
+  strings: TemplateStringsArray,
+  ...args: StringableSignal[]
+) => {
+  const text = strings.reduce((acc, str, i) => {
+    const arg = args[i];
+    const argStr = arg ? arg.get().toString() : "";
+
+    return acc + str + argStr;
+  }, "");
+
+  return $text(text);
 };
