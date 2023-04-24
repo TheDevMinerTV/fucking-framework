@@ -28,11 +28,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - run: |
+      - name: Build
+        run: |
+          mkdir output/assets -p
           yarn
           yarn build
 
-      - uses: actions/upload-pages-artifact@v1
+      - name: Upload output
+        uses: actions/upload-pages-artifact@v1
         with:
           path: 'output'
 
