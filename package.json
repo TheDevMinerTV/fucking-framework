@@ -2,7 +2,10 @@
   "name": "fucking-framework",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "CC-0",
+  "scripts": {
+     "dev": "concurrently \"rollup --watch -c rollup.config.js\" \"serve output\""
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-html": "^0.2.4",
@@ -11,6 +14,7 @@
     "@types/uuid": "^8.3.4",
     "@web/dev-server": "^0.1.34",
     "@web/dev-server-rollup": "^0.3.19",
+    "concurrently": "^8.0.1",
     "nodemon": "^2.0.19",
     "rollup": "^2.79.0",
     "rollup-plugin-terser": "^7.0.2",
@@ -18,7 +22,7 @@
     "typescript": "^4.8.3"
   },
   "dependencies": {
-    "serve": "^14.0.1",
+    "serve": "^14.2.0",
     "uuid": "^9.0.0"
   }
 }
