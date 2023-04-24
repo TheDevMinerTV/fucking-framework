@@ -2,7 +2,7 @@
   "name": "fucking-framework",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "CC-0",
+  "license": "CC0-1.0",
   "scripts": {
      "build": "rollup -c rollup.config.js",
      "dev": "concurrently \"rollup --watch -c rollup.config.js\" \"serve output\""
