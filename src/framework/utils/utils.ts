@@ -22,7 +22,7 @@ export const $el = (
 };
 
 export const $e = (type: TemplateStringsArray, ...children: Node[]) => {
-  return $el(type[0], {}, {}, children);
+  return $el(type[0].trim(), {}, {}, children);
 };
 
 export const $text = (text: string | StringableSignal): Node => {
