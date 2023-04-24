@@ -32,7 +32,7 @@ const main = () => {
         {},
         new Array(i.get())
           .fill(0)
-          .map((_, i) => $el("div", {}, {}, [$el("text", {}, {}, [$text(i.toString())]), $el("br", {}, {}, [])]))
+          .map((_, i) => $el("div", {}, {}, [$text(i.toString()), $el("br", {}, {}, [])]))
       ),
     ];
   };
