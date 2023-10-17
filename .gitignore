@@ -1,4 +1,4 @@
 .rollup.cache
 node_modules
-output
+output/*
 tsconfig.tsbuildinfo
