@@ -14,7 +14,7 @@
     "@rollup/plugin-typescript": "^11.0.0",
     "@types/uuid": "^9.0.0",
     "@web/dev-server": "^0.3.0",
-    "@web/dev-server-rollup": "^0.5.0",
+    "@web/dev-server-rollup": "^0.6.0",
     "concurrently": "^8.0.1",
     "nodemon": "^3.0.0",
     "rollup": "^4.0.0",
