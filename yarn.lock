@@ -371,36 +371,12 @@
   dependencies:
     "@types/node" "*"
 
-"@web/config-loader@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@web/config-loader/-/config-loader-0.2.2.tgz#e920d273473c39aad2ea93a4bd0a08bbf3471de2"
-  integrity sha512-HhoXMGivHbQ880MKQ1JChYCjWsMS4MUNOF35ktLV/0pZiX+J7oobybsPuyhS+gTnZsU7Duqnk3+HQYB7cNS4fA==
+"@web/config-loader@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@web/config-loader/-/config-loader-0.3.0.tgz#9c465b0ff5ec12e0f7c68326df8e99431c1b5c7f"
+  integrity sha512-OOhltaFpMzt1dG66yPoXgGvjwaUxy2SrOXd+o6CjOEFfjeKBI9QoHlagUvYiLAcMZrGGGL+Rl+mdqH+GUji0vQ==
   dependencies:
     semver "^7.3.4"
-
-"@web/dev-server-core@^0.6.2", "@web/dev-server-core@^0.6.3":
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/@web/dev-server-core/-/dev-server-core-0.6.3.tgz#069bd1259500fce5ce2ee29ccbcf5ba3fe71aaeb"
-  integrity sha512-BWlgxIXQbg3RqUdz9Cfeh3XqFv0KcjQi4DLaZy9s63IlXgNZTzesTfDzliP/mIdWd5r8KZYh/P3n6LMi7CLPjQ==
-  dependencies:
-    "@types/koa" "^2.11.6"
-    "@types/ws" "^7.4.0"
-    "@web/parse5-utils" "^2.0.2"
-    chokidar "^3.4.3"
-    clone "^2.1.2"
-    es-module-lexer "^1.0.0"
-    get-stream "^6.0.0"
-    is-stream "^2.0.0"
-    isbinaryfile "^5.0.0"
-    koa "^2.13.0"
-    koa-etag "^4.0.0"
-    koa-send "^5.0.1"
-    koa-static "^5.0.0"
-    lru-cache "^8.0.4"
-    mime-types "^2.1.27"
-    parse5 "^6.0.1"
-    picomatch "^2.2.2"
-    ws "^7.4.2"
 
 "@web/dev-server-core@^0.7.0":
   version "0.7.0"
@@ -426,18 +402,6 @@
     picomatch "^2.2.2"
     ws "^7.4.2"
 
-"@web/dev-server-rollup@^0.5.4":
-  version "0.5.4"
-  resolved "https://registry.yarnpkg.com/@web/dev-server-rollup/-/dev-server-rollup-0.5.4.tgz#c8a55280d48a5675122f780df9448fdd4f66ac64"
-  integrity sha512-lIN+lwj84Oh8Whe4vHijjMVe7NLJUzLxiiUsOleUtrBp1b7Us9QyUNCJK/iYitHJJDhCw6JcLJbCJ5H+vW969Q==
-  dependencies:
-    "@rollup/plugin-node-resolve" "^15.0.1"
-    "@web/dev-server-core" "^0.6.2"
-    nanocolors "^0.2.1"
-    parse5 "^6.0.1"
-    rollup "^3.15.0"
-    whatwg-url "^11.0.0"
-
 "@web/dev-server-rollup@^0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@web/dev-server-rollup/-/dev-server-rollup-0.6.0.tgz#eeb61f6d32c091b6af249f7ef5c39607e137d169"
@@ -450,16 +414,16 @@
     rollup "^3.15.0"
     whatwg-url "^11.0.0"
 
-"@web/dev-server@^0.3.0":
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/@web/dev-server/-/dev-server-0.3.6.tgz#3b01e14831029c772cb76242ec24458e071c4a59"
-  integrity sha512-hOHEP0PapJv0YiyFcvO0ruILJ35gZOd7gDivGwhi9MbeA5P+0b1eQv8tj/YXnAKmSD7lW+QjRTV0KWP8EzRoCQ==
+"@web/dev-server@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@web/dev-server/-/dev-server-0.4.0.tgz#aaeacec8c859fe481e1816af34b8d7a8a1715978"
+  integrity sha512-xBV+mYLZnmIu47l0VWG4wSIl9FVF1c1+R0r3P4zWPkqh0qCoWPKv/ZwdEiKozmZib1QAHMB+7yYZr8ygYi/meA==
   dependencies:
     "@babel/code-frame" "^7.12.11"
     "@types/command-line-args" "^5.0.0"
-    "@web/config-loader" "^0.2.2"
-    "@web/dev-server-core" "^0.6.3"
-    "@web/dev-server-rollup" "^0.5.4"
+    "@web/config-loader" "^0.3.0"
+    "@web/dev-server-core" "^0.7.0"
+    "@web/dev-server-rollup" "^0.6.0"
     camelcase "^6.2.0"
     command-line-args "^5.1.1"
     command-line-usage "^7.0.1"
@@ -469,14 +433,6 @@
     nanocolors "^0.2.1"
     open "^8.0.2"
     portfinder "^1.0.32"
-
-"@web/parse5-utils@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@web/parse5-utils/-/parse5-utils-2.0.2.tgz#263df67fb4262738c891314199b666f5bd96781b"
-  integrity sha512-TogrPNt36zOSjbEd8zoDmUGsN2dqMbk4U+2DrxsnbVxtUIBRCNPIuZ+XeoGF8gpxe2/Yf0dIVz+HW5+wEnqkCg==
-  dependencies:
-    "@types/parse5" "^6.0.1"
-    parse5 "^6.0.1"
 
 "@web/parse5-utils@^2.1.0":
   version "2.1.0"
