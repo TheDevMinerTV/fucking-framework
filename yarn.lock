@@ -273,9 +273,9 @@
     "@types/node" "*"
 
 "@types/command-line-args@^5.0.0":
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/@types/command-line-args/-/command-line-args-5.2.2.tgz#ca93ae7045305a2b7c60936bfcb1ebc897b42270"
-  integrity sha512-9aZ7KzLDOBYyqH5J2bvB9edvsMXusX+H/aS8idAJOpWNmscZG5RqO1CVJPFa4Q0/1xKgvxcweXunFVx2l/dYFA==
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@types/command-line-args/-/command-line-args-5.2.3.tgz#553ce2fd5acf160b448d307649b38ffc60d39639"
+  integrity sha512-uv0aG6R0Y8WHZLTamZwtfsDLVRnOa+n+n5rEvFWL5Na5gZ8V2Teab/duDPFzIIIhs9qizDpcavCusCLJZu62Kw==
 
 "@types/connect@*":
   version "3.4.38"
@@ -432,11 +432,9 @@
     "@types/node" "*"
 
 "@web/config-loader@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@web/config-loader/-/config-loader-0.3.0.tgz#9c465b0ff5ec12e0f7c68326df8e99431c1b5c7f"
-  integrity sha512-OOhltaFpMzt1dG66yPoXgGvjwaUxy2SrOXd+o6CjOEFfjeKBI9QoHlagUvYiLAcMZrGGGL+Rl+mdqH+GUji0vQ==
-  dependencies:
-    semver "^7.3.4"
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@web/config-loader/-/config-loader-0.3.1.tgz#0917fd549c264e565e75bd6c7d73acd7365df26b"
+  integrity sha512-IYjHXUgSGGNpO3YJQ9foLcazbJlAWDdJGRe9be7aOhon0Nd6Na5JIOJAej7jsMu76fKHr4b4w2LfIdNQ4fJ8pA==
 
 "@web/dev-server-core@^0.7.0":
   version "0.7.0"
@@ -474,16 +472,28 @@
     rollup "^4.4.0"
     whatwg-url "^11.0.0"
 
+"@web/dev-server-rollup@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@web/dev-server-rollup/-/dev-server-rollup-0.6.1.tgz#85d881c20faf187138064a6de861c379be9ca224"
+  integrity sha512-vhtsQ8qu1pBHailOBOYJwZnYDc1Lmx6ZAd2j+y5PD2ck0R1LmVsZ7dZK8hDCpkvpvlu2ndURjL9tbzdcsBRJmg==
+  dependencies:
+    "@rollup/plugin-node-resolve" "^15.0.1"
+    "@web/dev-server-core" "^0.7.0"
+    nanocolors "^0.2.1"
+    parse5 "^6.0.1"
+    rollup "^4.4.0"
+    whatwg-url "^11.0.0"
+
 "@web/dev-server@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@web/dev-server/-/dev-server-0.4.0.tgz#aaeacec8c859fe481e1816af34b8d7a8a1715978"
-  integrity sha512-xBV+mYLZnmIu47l0VWG4wSIl9FVF1c1+R0r3P4zWPkqh0qCoWPKv/ZwdEiKozmZib1QAHMB+7yYZr8ygYi/meA==
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@web/dev-server/-/dev-server-0.4.1.tgz#e534f106008b7a21f1c4593a230e1e7c14339684"
+  integrity sha512-GHeyH8MBZQpODFiHiXAdX4hOVbeDyD/DUermUinh/nexWAZUcXyXa200RItuAL6b25MQ3D/5hKNDypujSvXxiw==
   dependencies:
     "@babel/code-frame" "^7.12.11"
     "@types/command-line-args" "^5.0.0"
     "@web/config-loader" "^0.3.0"
     "@web/dev-server-core" "^0.7.0"
-    "@web/dev-server-rollup" "^0.6.0"
+    "@web/dev-server-rollup" "^0.6.1"
     camelcase "^6.2.0"
     command-line-args "^5.1.1"
     command-line-usage "^7.0.1"
@@ -1803,7 +1813,7 @@ safe-buffer@5.2.1, safe-buffer@^5.0.1, safe-buffer@^5.1.0:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
-semver@^7.3.4, semver@^7.5.3:
+semver@^7.5.3:
   version "7.5.4"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.4.tgz#483986ec4ed38e1c6c48c34894a9182dbff68a6e"
   integrity sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==
