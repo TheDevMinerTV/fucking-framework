@@ -3,7 +3,7 @@ import html from '@rollup/plugin-html';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
 import fs from 'node:fs';
-import { terser } from '@rollup/plugin-terser';
+import terser from '@rollup/plugin-terser';
 
 const DEV = true;
 
